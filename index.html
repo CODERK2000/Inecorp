@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inecorp - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JavaScript.JS"></script>
+    <link rel="stylesheet" href="Responsividad.css">
+</head>
+<body class="bg-white text-gray-800">
+        <header class="bg-[#252422] shadow-lg">
+            <nav class="container mx-auto flex flex-wrap justify-between items-center py-5 px-8">
+                <!-- Logo Inecorp -->
+                <a href="#" class="text-4xl font-bold text-[#fffcf2] tracking-wide hover:text-[#d4f8e8] transition duration-300 ease-in-out">
+                    Inecorp
+                </a>
+    
+                <!-- Menú Desktop -->
+                <ul class="hidden md:flex space-x-8 font-medium text-white">
+                    <li><a href="index.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Inicio</a></li>
+                    <li><a href="producto.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Productos</a></li>
+                    <li><a href="Nosostros.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Nosotros</a></li>
+                    <li><a href="ubicacion.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Ubicación</a></li>
+                </ul>
+    
+                <!-- Botón Toggle -->
+                <button id="menuButton" class="md:hidden text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+    
+                <!-- Menú Mobile -->
+                <div id="menuMobile" class="hidden w-full md:hidden">
+                    <ul class="flex flex-col space-y-4 mt-4 text-center font-medium text-white">
+                        <li><a href="index.html" class="block hover:text-[#a7e9af] transition-all duration-300">Inicio</a></li>
+                        <li><a href="producto.html" class="block hover:text-[#a7e9af] transition-all duration-300">Productos</a></li>
+                        <li><a href="Nosostros.html" class="block hover:text-[#a7e9af] transition-all duration-300">Nosotros</a></li>
+                        <li><a href="ubicacion.html" class="block hover:text-[#a7e9af] transition-all duration-300">Ubicación</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <script>
+            document.getElementById('menuButton').addEventListener('click', function () {
+                const menu = document.getElementById('menuMobile');
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    
+<!-- Hero Section -->
+<section id="inicio" class="relative bg-cover bg-center py-32" style="background-image: url('img/BANNER.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="absolute inset-0 bg-[#004b23] bg-opacity-60"></div>
+    <div class="container mx-auto text-center relative z-10">
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl font-bold text-white tracking-wide uppercase mb-6 drop-shadow-lg">
+            Bienvenidos a <span class="text-[#fffcf2]">Inecorp</span>
+        </h1>
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-[#d4d4d4] leading-relaxed mb-10 max-w-2xl mx-auto">
+            Soluciones empresariales diseñadas para impulsar tu éxito. Nuestra experiencia y compromiso garantizan resultados excepcionales para tu negocio.
+        </p>
+        <!-- Call to Action Button -->
+        <a href="#contact-form" class="bg-[#38b000] text-white text-lg font-medium py-3 px-10 rounded-full shadow-lg hover:bg-[#2a7500] transition-all transform hover:-translate-y-1 hover:scale-110">
+            Contáctanos
+        </a>
+    </div>
+</section>
+
+
+<!-- Products Section -->
+<section id="servicios" class="py-20 bg-[#fffcf2]" style="background-image: url(img/servicio.png); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-[#004b23] mb-12">Destacados</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <!-- Card 1 - Papas en Bastones -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <img src="img/papas-bastones.png" alt="Papas en Bastones" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-2xl font-semibold text-[#006400] mb-4">Papas en Bastones</h3>
+                <p class="text-[#403d39] mb-6">Ofrecemos papas en bastones, listas para cocinar y disfrutar en cualquier momento. Con la frescura y calidad que nos caracteriza, nuestras papas son ideales para acompañar tus comidas o como aperitivos.</p>
+                <a href="producto.html" class="inline-block bg-[#38b000] text-white py-2 px-6 rounded-full hover:bg-[#006400] transition-all">Más Información</a>
+            </div>
+
+            <!-- Card 2 - Papas en Cuñas -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <img src="img/papas-peladas.png" alt="Papas en Cuñas" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-2xl font-semibold text-[#006400] mb-4">Papas Peladas</h3>
+                <p class="text-[#403d39] mb-6">Nuestras papas en cuñas están preparadas para ofrecerte una experiencia de sabor única. Con una textura crujiente por fuera y suave por dentro, son perfectas para cualquier ocasión.</p>
+                <a href="producto.html" class="inline-block bg-[#38b000] text-white py-2 px-6 rounded-full hover:bg-[#006400] transition-all">Más Información</a>
+            </div>
+
+            <!-- Card 3 - Papas Picadas -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <img src="img/papas-picadas.png" alt="Papas Picadas" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-2xl font-semibold text-[#006400] mb-4">Papas Picadas</h3>
+                <p class="text-[#403d39] mb-6">Nuestras papas picadas están disponibles en diferentes presentaciones, perfectas para preparar platos rápidos y deliciosos. Con una calidad inigualable, garantizamos el mejor sabor y frescura en cada bocado.</p>
+                <a href="producto.html" class="inline-block bg-[#38b000] text-white py-2 px-6 rounded-full hover:bg-[#006400] transition-all">Más Información</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-20 bg-[#004b23]">
+    <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-[#fffcf2] mb-10">Lo que dicen nuestros clientes</h2>
+        
+        <!-- Carrusel para pantallas pequeñas -->
+        <div x-data="{ currentSlide: 0 }" class="relative lg:hidden">
+            <div class="overflow-hidden relative">
+                <div class="flex transition-transform duration-500" :style="'transform: translateX(-' + currentSlide * 100 + '%)'">
+                    <!-- Testimonial 1 -->
+                    <div class="min-w-full bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-[#403d39] italic mb-4">"Inecorp transformó nuestra empresa con soluciones innovadoras y efectivas."</p>
+                        <h4 class="text-[#38b000] font-semibold">- Juan Pérez, CEO</h4>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="min-w-full bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-[#403d39] italic mb-4">"El soporte técnico es excelente. Siempre están disponibles cuando los necesitamos."</p>
+                        <h4 class="text-[#38b000] font-semibold">- María López, Gerente de IT</h4>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="min-w-full bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-[#403d39] italic mb-4">"Excelente experiencia trabajando con Inecorp, son un verdadero aliado estratégico."</p>
+                        <h4 class="text-[#38b000] font-semibold">- Carlos Fernández, Director de Marketing</h4>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="min-w-full bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-[#403d39] italic mb-4">"Innovación y profesionalismo en cada uno de sus proyectos. Altamente recomendados."</p>
+                        <h4 class="text-[#38b000] font-semibold">- Laura Gómez, Gerente Comercial</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <button @click="currentSlide = (currentSlide - 1 + 4) % 4"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#38b000] text-white p-2 rounded-full">
+                &#8592;
+            </button>
+            <button @click="currentSlide = (currentSlide + 1) % 4"
+                class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#38b000] text-white p-2 rounded-full">
+                &#8594;
+            </button>
+            <!-- Indicadores -->
+            <div class="flex justify-center mt-6 space-x-2">
+                <template x-for="i in 4">
+                    <button @click="currentSlide = i - 1"
+                        :class="{'bg-[#38b000]': currentSlide === i - 1, 'bg-gray-300': currentSlide !== i - 1}"
+                        class="w-4 h-4 rounded-full"></button>
+                </template>
+            </div>
+        </div>
+
+        <!-- Grid para pantallas grandes -->
+        <div class="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-[#403d39] italic mb-4">"Inecorp transformó nuestra empresa con soluciones innovadoras y efectivas."</p>
+                <h4 class="text-[#38b000] font-semibold">- Juan Pérez, CEO</h4>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-[#403d39] italic mb-4">"El soporte técnico es excelente. Siempre están disponibles cuando los necesitamos."</p>
+                <h4 class="text-[#38b000] font-semibold">- María López, Gerente de IT</h4>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-[#403d39] italic mb-4">"Excelente experiencia trabajando con Inecorp, son un verdadero aliado estratégico."</p>
+                <h4 class="text-[#38b000] font-semibold">- Carlos Fernández, Director de Marketing</h4>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-[#403d39] italic mb-4">"Innovación y profesionalismo en cada uno de sus proyectos. Altamente recomendados."</p>
+                <h4 class="text-[#38b000] font-semibold">- Laura Gómez, Gerente Comercial</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+
+<!-- Formulario de contacto -->
+<section class="py-20 bg-[#f9fafb]" style="background-image: url('img/Contacto.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="container mx-auto text-center max-w-6xl">
+        <h2 class="text-4xl font-extrabold text-[#004b23] mb-12 font-bold">Contacto</h2>
+        <form id="contact-form" class="bg-white p-8 rounded-lg shadow-lg max-w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Columna 1: Datos personales -->
+            <div class="col-span-1">
+                <h3 class="text-2xl font-semibold text-[#38b000] mb-6">Datos personales</h3>
+                
+                <div class="mb-6">
+                    <label for="name" class="block text-lg text-[#333] font-medium mb-2">Nombre</label>
+                    <input type="text" id="name" name="name" class="w-full p-4 rounded-md border border-[#ddd] focus:border-[#38b000] focus:outline-none focus:ring-2 focus:ring-[#38b000] transition-all duration-300" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-6">
+                    <label for="lastname" class="block text-lg text-[#333] font-medium mb-2">Apellidos</label>
+                    <input type="text" id="lastname" name="lastname" class="w-full p-4 rounded-md border border-[#ddd] focus:border-[#38b000] focus:outline-none focus:ring-2 focus:ring-[#38b000] transition-all duration-300" placeholder="Tus apellidos" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-lg text-[#333] font-medium mb-2">Correo</label>
+                    <input type="email" id="email" name="email" class="w-full p-4 rounded-md border border-[#ddd] focus:border-[#38b000] focus:outline-none focus:ring-2 focus:ring-[#38b000] transition-all duration-300" placeholder="Tu correo electrónico" required>
+                </div>
+            </div>
+
+            <!-- Columna 2: Dirección -->
+            <div class="col-span-1">
+                <h3 class="text-2xl font-semibold text-[#38b000] mb-6">Dirección</h3>
+
+                <div class="mb-6">
+                    <label for="department" class="block text-lg text-[#333] font-medium mb-2">Departamento</label>
+                    <input type="text" id="department" name="department" class="w-full p-4 rounded-md border border-[#ddd] focus:border-[#38b000] focus:outline-none focus:ring-2 focus:ring-[#38b000] transition-all duration-300" placeholder="Tu departamento" required>
+                </div>
+                <div class="mb-6">
+                    <label for="province" class="block text-lg text-[#333] font-medium mb-2">Provincia</label>
+                    <input type="text" id="province" name="province" class="w-full p-4 rounded-md border border-[#ddd] focus:border-[#38b000] focus:outline-none focus:ring-2 focus:ring-[#38b000] transition-all duration-300" placeholder="Tu provincia" required>
+                </div>
+                <div class="mb-6">
+                    <label for="district" class="block text-lg text-[#333] font-medium mb-2">Distrito</label>
+                    <input type="text" id="district" name="district" class="w-full p-4 rounded-md border border-[#ddd] focus:border-[#38b000] focus:outline-none focus:ring-2 focus:ring-[#38b000] transition-all duration-300" placeholder="Tu distrito" required>
+                </div>
+                <div class="mb-6">
+                    <label for="Populated center" class="block text-lg text-[#333] font-medium mb-2">Centro poblado</label>
+                    <input type="text" id="Populated_center" name="Populated_center" class="w-full p-4 rounded-md border border-[#ddd] focus:border-[#38b000] focus:outline-none focus:ring-2 focus:ring-[#38b000] transition-all duration-300" placeholder="Tu centro poblado" required>
+                </div>
+            </div>
+
+            <!-- Columna 3: Mensaje -->
+            <div class="col-span-1">
+                <h3 class="text-2xl font-semibold text-[#38b000] mb-6">Mensaje</h3>
+                
+                <div class="mb-6">
+                    <label for="message" class="block text-lg text-[#333] font-medium mb-2">Escribe tu mensaje</label>
+                    <textarea id="message" name="message" class="w-full p-4 rounded-md border border-[#ddd] focus:border-[#38b000] focus:outline-none focus:ring-2 focus:ring-[#38b000] transition-all duration-300" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit" id="send-button" class="w-full py-4 bg-[#38b000] text-white text-lg font-semibold rounded-md transition-all duration-300 hover:bg-[#4c9a3d] focus:outline-none focus:ring-2 focus:ring-[#4c9a3d]">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Script para enviar a WhatsApp -->
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();  // Evita que el formulario se envíe de la forma tradicional
+    
+    // Obtener los valores del formulario
+    var name = document.getElementById("name").value;
+    var lastname = document.getElementById("lastname").value;
+    var email = document.getElementById("email").value;
+    var department = document.getElementById("department").value;
+    var province = document.getElementById("province").value;
+    var district = document.getElementById("district").value;
+    var Populated_center = document.getElementById("Populated_center").value;
+    var message = document.getElementById("message").value;
+
+    // Crear el mensaje que se enviará a WhatsApp
+    var whatsappMessage = `*Nombre:* ${name} ${lastname}\n*Correo:* ${email}\n*Departamento:* ${department}\n*Provincia:* ${province}\n*Distrito:* ${district} \n*Centro poblado:* ${Populated_center}\n*Mensaje:* ${message}`;
+
+    // Codificar el mensaje en URL
+    var encodedMessage = encodeURIComponent(whatsappMessage);
+
+    // Número de WhatsApp al que se enviará el mensaje
+    var whatsappNumber = '51951740863'; // Tu número de WhatsApp
+
+    // Crear el enlace de WhatsApp
+    var whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // Redirigir al usuario a WhatsApp
+    window.open(whatsappLink, '_blank');
+});
+</script>
+
+
+<!-- Footer Section -->
+<footer class="bg-[#252422] text-[#fffcf2] py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-10">
+            <!-- Logo y Nombre de la Empresa -->
+            <div class="flex flex-col items-center md:items-start">
+                <img src="logo.png" alt="Inecorp Logo" class="w-32 mb-4"> <!-- Asegúrate de tener el logo adecuado -->
+                <h3 class="text-4xl font-extrabold text-[#38b000]">Inecorp</h3>
+                <p class="mt-2 text-sm">Transformamos tu negocio con soluciones tecnológicas innovadoras.</p>
+            </div>
+
+            <!-- Navegación -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Navegación</h4>
+                <ul>
+                    <li><a href="#inicio" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Inicio</a></li>
+                    <li><a href="#servicios" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Servicios</a></li>
+                    <li><a href="#nosotros" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Nosotros</a></li>
+                    <li><a href="#contacto" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=61566536291790" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://twitter.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://linkedin.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://instagram.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+
+            <!-- Contacto y Dirección -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Contacto</h4>
+                <p class="text-[#ccc5b9] text-sm">Dirección: Calle Ficticia 123, Ciudad, País</p>
+                <p class="text-[#ccc5b9] text-sm">Teléfono: +123 456 789</p>
+                <p class="text-[#ccc5b9] text-sm">Email: contacto@inecorp.com</p>
+            </div>
+        </div>
+
+        <!-- Derechos de Autor -->
+        <div class="text-center mt-10">
+            <p class="text-sm text-[#ccc5b9]">&copy; 2024 Inecorp. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Agregar los iconos de redes sociales -->
+<!-- Asegúrate de tener Font Awesome o cualquier librería de iconos que uses -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</body>
+</html>

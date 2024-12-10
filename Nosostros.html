@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inecorp - Nosotros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Asegúrate de tener Font Awesome o cualquier librería de iconos que uses -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-[#252422] shadow-lg">
+        <nav class="container mx-auto flex flex-wrap justify-between items-center py-5 px-8">
+            <!-- Logo Inecorp -->
+            <a href="#" class="text-4xl font-bold text-[#fffcf2] tracking-wide hover:text-[#d4f8e8] transition duration-300 ease-in-out">
+                Inecorp
+            </a>
+
+            <!-- Menú Desktop -->
+            <ul class="hidden md:flex space-x-8 font-medium text-white">
+                <li><a href="index.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Inicio</a></li>
+                <li><a href="producto.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Productos</a></li>
+                <li><a href="Nosostros.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Nosotros</a></li>
+                <li><a href="ubicacion.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Ubicación</a></li>
+            </ul>
+
+            <!-- Botón Toggle -->
+            <button id="menuButton" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Menú Mobile -->
+            <div id="menuMobile" class="hidden w-full md:hidden">
+                <ul class="flex flex-col space-y-4 mt-4 text-center font-medium text-white">
+                    <li><a href="index.html" class="block hover:text-[#a7e9af] transition-all duration-300">Inicio</a></li>
+                    <li><a href="producto.html" class="block hover:text-[#a7e9af] transition-all duration-300">Productos</a></li>
+                    <li><a href="Nosostros.html" class="block hover:text-[#a7e9af] transition-all duration-300">Nosotros</a></li>
+                    <li><a href="ubicacion.html" class="block hover:text-[#a7e9af] transition-all duration-300">Ubicación</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-cover bg-center py-32" style="background-image: url('img/NOSOTROS.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="absolute inset-0 bg-[#000000] bg-opacity-60"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-white tracking-wide uppercase mb-6 drop-shadow-lg">
+                Bienvenidos a <span class="text-[#fffcf2]">Inecorp</span>
+            </h1>
+            <p class="text-lg md:text-xl text-[#d4d4d4] leading-relaxed mb-10 max-w-2xl mx-auto">
+                Soluciones empresariales diseñadas para impulsar tu éxito. Nuestra experiencia y compromiso garantizan resultados excepcionales para tu negocio.
+            </p>
+            <a href="#contacto" class="bg-[#38b000] text-white text-lg font-medium py-3 px-10 rounded-full shadow-lg hover:bg-[#2a7500] transition-all transform hover:-translate-y-1 hover:scale-110">
+                Contáctanos
+            </a>
+        </div>
+    </section>
+
+<!-- Nosotros Section -->
+<section id="nosotros" class="py-10 md:py-20 bg-[#f9fafb]">
+    <div class="container mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#004b23] mb-8 md:mb-12">Sobre Inecorp</h2>
+        <p class="text-base md:text-lg text-[#403d39] leading-relaxed mb-8 max-w-4xl mx-auto">
+            En Inecorp, nos especializamos en la producción y comercialización de productos alimenticios de alta calidad, con un enfoque particular en papas peladas y picadas en diversas presentaciones. Nuestro objetivo es ofrecer productos frescos, sabrosos y fáciles de disfrutar, adaptados a las necesidades del consumidor moderno. Con más de [X] años de experiencia en la industria, nos enorgullece proporcionar alimentos versátiles y prácticos que enriquecen la vida diaria de nuestros clientes, siempre con el compromiso de calidad y frescura que nos caracteriza.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+            <!-- Misión -->
+            <div class="bg-white p-6 md:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                <h3 class="text-xl md:text-2xl font-semibold text-[#006400] mb-4">Nuestra Misión</h3>
+                <p class="text-[#403d39] mb-6 text-sm md:text-base">
+                    Ofrecer productos alimenticios de la más alta calidad, como papas peladas y picadas, para satisfacer las demandas de nuestros clientes con soluciones frescas, convenientes y deliciosas. Nos comprometemos a mantener los más altos estándares de producción y a brindar opciones que se adapten a todos los gustos y necesidades.
+                </p>
+            </div>
+
+            <!-- Visión -->
+            <div class="bg-white p-6 md:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                <h3 class="text-xl md:text-2xl font-semibold text-[#006400] mb-4">Nuestra Visión</h3>
+                <p class="text-[#403d39] mb-6 text-sm md:text-base">
+                    Ser la marca líder en la producción y comercialización de papas en todas sus presentaciones, ofreciendo productos innovadores y de calidad que aporten conveniencia y sabor a las mesas de los consumidores a nivel nacional e internacional. Aspiramos a expandir nuestra presencia y seguir siendo el referente de confianza en la industria alimentaria.
+                </p>
+            </div>
+
+            <!-- Valores -->
+            <div class="bg-white p-6 md:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                <h3 class="text-xl md:text-2xl font-semibold text-[#006400] mb-4">Nuestros Valores</h3>
+                <p class="text-[#403d39] mb-6 text-sm md:text-base">
+                    En Inecorp, nos guiamos por los valores de calidad, frescura, innovación, responsabilidad y compromiso. Nos esforzamos por ofrecer productos que no solo cumplan con los más altos estándares, sino que también respondan a las expectativas de nuestros clientes, manteniendo siempre una relación transparente y honesta.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección de Accionistas Premium -->
+<section id="accionistas" class="py-16 bg-white overflow-hidden">
+    <div class="container mx-auto px-6">
+        <!-- Encabezado con animación de revelación -->
+        <div class="text-center mb-12 opacity-0 translate-y-4 animate-fade-in-up">
+            <h2 class="text-3xl font-bold text-[#004b23] mb-3">Accionistas</h2>
+            <div class="w-24 h-1 bg-[#38b000] mx-auto rounded-full"></div>
+        </div>
+        <!-- Grid de Accionistas con hover effects y animaciones -->
+        <div class="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <!-- Accionista 1 - Principal -->
+<div class="group bg-gradient-to-br from-[#f9fafb] to-white rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+    <div class="relative mb-3">
+        <!-- Avatar con efecto de brillo -->
+        <div class="w-16 h-16 rounded-full bg-[#38b000] flex items-center justify-center mx-auto 
+                  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
+                  before:bg-white before:opacity-0 before:group-hover:opacity-20 before:transition-opacity">
+            <i class="fas fa-user text-white text-xl group-hover:scale-110 transition-transform"></i>
+        </div>
+        <!-- Insignia con animación -->
+        <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#004b23] rounded-full flex items-center justify-center
+                  animate-pulse">
+            <i class="fas fa-star text-white text-xs"></i>
+        </div>
+    </div>
+    <!-- Información con fade-in en hover -->
+    <div class="text-center opacity-90 group-hover:opacity-100 transition-opacity">
+        <h3 class="text-base font-semibold text-[#006400]">Juan Díaz</h3>
+        <p class="text-sm text-[#403d39] font-medium">Presidente del Consejo</p>
+        <p class="text-xs text-[#666] mt-1">35% participación</p>
+    </div>
+    <!-- Menú desplegable con información adicional -->
+    <div class="mt-3 overflow-hidden max-h-0 group-hover:max-h-32 transition-all duration-300">
+        <div class="text-xs text-[#666] space-y-1 pt-2 border-t border-gray-200">
+            <p>Miembro desde 2015</p>
+            <p>Executive MBA - Harvard</p>
+            <a href="#" onclick="openModal(event)" class="text-[#38b000] hover:text-[#2d9600] transition-colors inline-flex items-center gap-1">
+                Ver perfil completo
+                <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal del Perfil Completo -->
+<div id="profileModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg max-w-sm w-full mx-4 transform transition-all duration-300 opacity-0 translate-y-4" id="modalContent">
+        <!-- Encabezado del Modal -->
+        <div class="border-b border-gray-200 p-4">
+            <div class="flex justify-between items-start">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-[#38b000] flex items-center justify-center">
+                        <i class="fas fa-user text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-[#004b23]">Juan Díaz</h3>
+                        <p class="text-sm text-[#666]">Presidente del Consejo</p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenido del Modal -->
+        <div class="p-4 space-y-4">
+            <!-- Información Personal -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Información Personal</h4>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <p class="text-sm text-[#666]">Nacionalidad</p>
+                        <p class="font-medium">Española</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#666]">Años de Experiencia</p>
+                        <p class="font-medium">25+ años</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formación Académica -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Formación Académica</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <p class="font-medium">Executive MBA</p>
+                        <p class="text-xs text-[#666]">Harvard Business School, 2005</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Licenciatura en Economía</p>
+                        <p class="text-xs text-[#666]">Universidad Complutense de Madrid, 1998</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Trayectoria Profesional -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Trayectoria Profesional</h4>
+                <div class="space-y-3">
+                    <div class="border-l-2 border-[#38b000] pl-3">
+                        <p class="font-medium">Presidente del Consejo - Inecorp</p>
+                        <p class="text-xs text-[#666]">2015 - Presente</p>
+                    </div>
+                    <div class="border-l-2 border-[#38b000] pl-3">
+                        <p class="font-medium">CEO - Global Solutions Inc.</p>
+                        <p class="text-xs text-[#666]">2008 - 2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Participación Accionaria -->
+            <div>
+                <h4 class="text-lg font-semibold text-[#006400] mb-3">Participación Accionaria</h4>
+                <div class="bg-[#f9fafb] rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+                        <span class="font-medium">Porcentaje de Participación</span>
+                        <span class="text-[#38b000] font-bold">35%</span>
+                    </div>
+                    <div class="mt-2 h-2 bg-gray-200 rounded-full">
+                        <div class="h-full w-[35%] bg-[#38b000] rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie del Modal -->
+        <div class="border-t border-gray-200 p-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-[#38b000]"></i>
+                    <span class="text-xs">juan.diaz@inecorp.com</span>
+                </div>
+                <button onclick="closeModal()" class="bg-[#38b000] text-white px-4 py-2 rounded-md hover:bg-[#2d9600] transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript para la funcionalidad del modal -->
+<script>
+function openModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById('profileModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+        modalContent.classList.remove('opacity-0', 'translate-y-4');
+    }, 10);
+
+    // Prevenir scroll del body
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('profileModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modalContent.classList.add('opacity-0', 'translate-y-4');
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
+
+    // Restaurar scroll del body
+    document.body.style.overflow = 'auto';
+}
+
+// Cerrar modal al hacer clic fuera
+document.getElementById('profileModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Cerrar modal con tecla Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+</script>
+<!-- Accionista 1 - Principal -->
+<div class="group bg-gradient-to-br from-[#f9fafb] to-white rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+    <div class="relative mb-3">
+        <!-- Avatar con efecto de brillo -->
+        <div class="w-16 h-16 rounded-full bg-[#38b000] flex items-center justify-center mx-auto 
+                  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
+                  before:bg-white before:opacity-0 before:group-hover:opacity-20 before:transition-opacity">
+            <i class="fas fa-user text-white text-xl group-hover:scale-110 transition-transform"></i>
+        </div>
+        <!-- Insignia con animación -->
+        <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#004b23] rounded-full flex items-center justify-center
+                  animate-pulse">
+            <i class="fas fa-star text-white text-xs"></i>
+        </div>
+    </div>
+    <!-- Información con fade-in en hover -->
+    <div class="text-center opacity-90 group-hover:opacity-100 transition-opacity">
+        <h3 class="text-base font-semibold text-[#006400]">Juan Díaz</h3>
+        <p class="text-sm text-[#403d39] font-medium">Presidente del Consejo</p>
+        <p class="text-xs text-[#666] mt-1">35% participación</p>
+    </div>
+    <!-- Menú desplegable con información adicional -->
+    <div class="mt-3 overflow-hidden max-h-0 group-hover:max-h-32 transition-all duration-300">
+        <div class="text-xs text-[#666] space-y-1 pt-2 border-t border-gray-200">
+            <p>Miembro desde 2015</p>
+            <p>Executive MBA - Harvard</p>
+            <a href="#" onclick="openModal(event)" class="text-[#38b000] hover:text-[#2d9600] transition-colors inline-flex items-center gap-1">
+                Ver perfil completo
+                <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal del Perfil Completo -->
+<div id="profileModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg max-w-sm w-full mx-4 transform transition-all duration-300 opacity-0 translate-y-4" id="modalContent">
+        <!-- Encabezado del Modal -->
+        <div class="border-b border-gray-200 p-4">
+            <div class="flex justify-between items-start">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-[#38b000] flex items-center justify-center">
+                        <i class="fas fa-user text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-[#004b23]">Juan Díaz</h3>
+                        <p class="text-sm text-[#666]">Presidente del Consejo</p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenido del Modal -->
+        <div class="p-4 space-y-4">
+            <!-- Información Personal -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Información Personal</h4>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <p class="text-sm text-[#666]">Nacionalidad</p>
+                        <p class="font-medium">Española</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#666]">Años de Experiencia</p>
+                        <p class="font-medium">25+ años</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formación Académica -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Formación Académica</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <p class="font-medium">Executive MBA</p>
+                        <p class="text-xs text-[#666]">Harvard Business School, 2005</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Licenciatura en Economía</p>
+                        <p class="text-xs text-[#666]">Universidad Complutense de Madrid, 1998</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Trayectoria Profesional -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Trayectoria Profesional</h4>
+                <div class="space-y-3">
+                    <div class="border-l-2 border-[#38b000] pl-3">
+                        <p class="font-medium">Presidente del Consejo - Inecorp</p>
+                        <p class="text-xs text-[#666]">2015 - Presente</p>
+                    </div>
+                    <div class="border-l-2 border-[#38b000] pl-3">
+                        <p class="font-medium">CEO - Global Solutions Inc.</p>
+                        <p class="text-xs text-[#666]">2008 - 2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Participación Accionaria -->
+            <div>
+                <h4 class="text-lg font-semibold text-[#006400] mb-3">Participación Accionaria</h4>
+                <div class="bg-[#f9fafb] rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+                        <span class="font-medium">Porcentaje de Participación</span>
+                        <span class="text-[#38b000] font-bold">35%</span>
+                    </div>
+                    <div class="mt-2 h-2 bg-gray-200 rounded-full">
+                        <div class="h-full w-[35%] bg-[#38b000] rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie del Modal -->
+        <div class="border-t border-gray-200 p-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-[#38b000]"></i>
+                    <span class="text-xs">juan.diaz@inecorp.com</span>
+                </div>
+                <button onclick="closeModal()" class="bg-[#38b000] text-white px-4 py-2 rounded-md hover:bg-[#2d9600] transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript para la funcionalidad del modal -->
+<script>
+function openModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById('profileModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+        modalContent.classList.remove('opacity-0', 'translate-y-4');
+    }, 10);
+
+    // Prevenir scroll del body
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('profileModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modalContent.classList.add('opacity-0', 'translate-y-4');
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
+
+    // Restaurar scroll del body
+    document.body.style.overflow = 'auto';
+}
+
+// Cerrar modal al hacer clic fuera
+document.getElementById('profileModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Cerrar modal con tecla Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+</script>
+<!-- Accionista 1 - Principal -->
+<div class="group bg-gradient-to-br from-[#f9fafb] to-white rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+    <div class="relative mb-3">
+        <!-- Avatar con efecto de brillo -->
+        <div class="w-16 h-16 rounded-full bg-[#38b000] flex items-center justify-center mx-auto 
+                  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
+                  before:bg-white before:opacity-0 before:group-hover:opacity-20 before:transition-opacity">
+            <i class="fas fa-user text-white text-xl group-hover:scale-110 transition-transform"></i>
+        </div>
+        <!-- Insignia con animación -->
+        <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#004b23] rounded-full flex items-center justify-center
+                  animate-pulse">
+            <i class="fas fa-star text-white text-xs"></i>
+        </div>
+    </div>
+    <!-- Información con fade-in en hover -->
+    <div class="text-center opacity-90 group-hover:opacity-100 transition-opacity">
+        <h3 class="text-base font-semibold text-[#006400]">Juan Díaz</h3>
+        <p class="text-sm text-[#403d39] font-medium">Presidente del Consejo</p>
+        <p class="text-xs text-[#666] mt-1">35% participación</p>
+    </div>
+    <!-- Menú desplegable con información adicional -->
+    <div class="mt-3 overflow-hidden max-h-0 group-hover:max-h-32 transition-all duration-300">
+        <div class="text-xs text-[#666] space-y-1 pt-2 border-t border-gray-200">
+            <p>Miembro desde 2015</p>
+            <p>Executive MBA - Harvard</p>
+            <a href="#" onclick="openModal(event)" class="text-[#38b000] hover:text-[#2d9600] transition-colors inline-flex items-center gap-1">
+                Ver perfil completo
+                <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal del Perfil Completo -->
+<div id="profileModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg max-w-sm w-full mx-4 transform transition-all duration-300 opacity-0 translate-y-4" id="modalContent">
+        <!-- Encabezado del Modal -->
+        <div class="border-b border-gray-200 p-4">
+            <div class="flex justify-between items-start">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-[#38b000] flex items-center justify-center">
+                        <i class="fas fa-user text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-[#004b23]">Juan Díaz</h3>
+                        <p class="text-sm text-[#666]">Presidente del Consejo</p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenido del Modal -->
+        <div class="p-4 space-y-4">
+            <!-- Información Personal -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Información Personal</h4>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <p class="text-sm text-[#666]">Nacionalidad</p>
+                        <p class="font-medium">Española</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#666]">Años de Experiencia</p>
+                        <p class="font-medium">25+ años</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formación Académica -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Formación Académica</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <p class="font-medium">Executive MBA</p>
+                        <p class="text-xs text-[#666]">Harvard Business School, 2005</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Licenciatura en Economía</p>
+                        <p class="text-xs text-[#666]">Universidad Complutense de Madrid, 1998</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Trayectoria Profesional -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Trayectoria Profesional</h4>
+                <div class="space-y-3">
+                    <div class="border-l-2 border-[#38b000] pl-3">
+                        <p class="font-medium">Presidente del Consejo - Inecorp</p>
+                        <p class="text-xs text-[#666]">2015 - Presente</p>
+                    </div>
+                    <div class="border-l-2 border-[#38b000] pl-3">
+                        <p class="font-medium">CEO - Global Solutions Inc.</p>
+                        <p class="text-xs text-[#666]">2008 - 2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Participación Accionaria -->
+            <div>
+                <h4 class="text-lg font-semibold text-[#006400] mb-3">Participación Accionaria</h4>
+                <div class="bg-[#f9fafb] rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+                        <span class="font-medium">Porcentaje de Participación</span>
+                        <span class="text-[#38b000] font-bold">35%</span>
+                    </div>
+                    <div class="mt-2 h-2 bg-gray-200 rounded-full">
+                        <div class="h-full w-[35%] bg-[#38b000] rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie del Modal -->
+        <div class="border-t border-gray-200 p-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-[#38b000]"></i>
+                    <span class="text-xs">juan.diaz@inecorp.com</span>
+                </div>
+                <button onclick="closeModal()" class="bg-[#38b000] text-white px-4 py-2 rounded-md hover:bg-[#2d9600] transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript para la funcionalidad del modal -->
+<script>
+function openModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById('profileModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+        modalContent.classList.remove('opacity-0', 'translate-y-4');
+    }, 10);
+
+    // Prevenir scroll del body
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('profileModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modalContent.classList.add('opacity-0', 'translate-y-4');
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
+
+    // Restaurar scroll del body
+    document.body.style.overflow = 'auto';
+}
+
+// Cerrar modal al hacer clic fuera
+document.getElementById('profileModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Cerrar modal con tecla Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+</script>
+<!-- Accionista 1 - Principal -->
+<div class="group bg-gradient-to-br from-[#f9fafb] to-white rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+    <div class="relative mb-3">
+        <!-- Avatar con efecto de brillo -->
+        <div class="w-16 h-16 rounded-full bg-[#38b000] flex items-center justify-center mx-auto 
+                  before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
+                  before:bg-white before:opacity-0 before:group-hover:opacity-20 before:transition-opacity">
+            <i class="fas fa-user text-white text-xl group-hover:scale-110 transition-transform"></i>
+        </div>
+        <!-- Insignia con animación -->
+        <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#004b23] rounded-full flex items-center justify-center
+                  animate-pulse">
+            <i class="fas fa-star text-white text-xs"></i>
+        </div>
+    </div>
+    <!-- Información con fade-in en hover -->
+    <div class="text-center opacity-90 group-hover:opacity-100 transition-opacity">
+        <h3 class="text-base font-semibold text-[#006400]">Juan Díaz</h3>
+        <p class="text-sm text-[#403d39] font-medium">Presidente del Consejo</p>
+        <p class="text-xs text-[#666] mt-1">35% participación</p>
+    </div>
+    <!-- Menú desplegable con información adicional -->
+    <div class="mt-3 overflow-hidden max-h-0 group-hover:max-h-32 transition-all duration-300">
+        <div class="text-xs text-[#666] space-y-1 pt-2 border-t border-gray-200">
+            <p>Miembro desde 2015</p>
+            <p>Executive MBA - Harvard</p>
+            <a href="#" onclick="openModal(event)" class="text-[#38b000] hover:text-[#2d9600] transition-colors inline-flex items-center gap-1">
+                Ver perfil completo
+                <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal del Perfil Completo -->
+<div id="profileModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg max-w-sm w-full mx-4 transform transition-all duration-300 opacity-0 translate-y-4" id="modalContent">
+        <!-- Encabezado del Modal -->
+        <div class="border-b border-gray-200 p-4">
+            <div class="flex justify-between items-start">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-[#38b000] flex items-center justify-center">
+                        <i class="fas fa-user text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-[#004b23]">Juan Díaz</h3>
+                        <p class="text-sm text-[#666]">Presidente del Consejo</p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenido del Modal -->
+        <div class="p-4 space-y-4">
+            <!-- Información Personal -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Información Personal</h4>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <p class="text-sm text-[#666]">Nacionalidad</p>
+                        <p class="font-medium">Española</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#666]">Años de Experiencia</p>
+                        <p class="font-medium">25+ años</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formación Académica -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Formación Académica</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <p class="font-medium">Executive MBA</p>
+                        <p class="text-xs text-[#666]">Harvard Business School, 2005</p>
+                    </li>
+                    <li>
+                        <p class="font-medium">Licenciatura en Economía</p>
+                        <p class="text-xs text-[#666]">Universidad Complutense de Madrid, 1998</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Trayectoria Profesional -->
+            <div>
+                <h4 class="text-base font-semibold text-[#006400] mb-2">Trayectoria Profesional</h4>
+                <div class="space-y-3">
+                    <div class="border-l-2 border-[#38b000] pl-3">
+                        <p class="font-medium">Presidente del Consejo - Inecorp</p>
+                        <p class="text-xs text-[#666]">2015 - Presente</p>
+                    </div>
+                    <div class="border-l-2 border-[#38b000] pl-3">
+                        <p class="font-medium">CEO - Global Solutions Inc.</p>
+                        <p class="text-xs text-[#666]">2008 - 2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Participación Accionaria -->
+            <div>
+                <h4 class="text-lg font-semibold text-[#006400] mb-3">Participación Accionaria</h4>
+                <div class="bg-[#f9fafb] rounded-lg p-4">
+                    <div class="flex justify-between items-center">
+                        <span class="font-medium">Porcentaje de Participación</span>
+                        <span class="text-[#38b000] font-bold">35%</span>
+                    </div>
+                    <div class="mt-2 h-2 bg-gray-200 rounded-full">
+                        <div class="h-full w-[35%] bg-[#38b000] rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie del Modal -->
+        <div class="border-t border-gray-200 p-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-[#38b000]"></i>
+                    <span class="text-xs">juan.diaz@inecorp.com</span>
+                </div>
+                <button onclick="closeModal()" class="bg-[#38b000] text-white px-4 py-2 rounded-md hover:bg-[#2d9600] transition-colors">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript para la funcionalidad del modal -->
+<script>
+function openModal(event) {
+    event.preventDefault();
+    const modal = document.getElementById('profileModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+        modalContent.classList.remove('opacity-0', 'translate-y-4');
+    }, 10);
+
+    // Prevenir scroll del body
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('profileModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modalContent.classList.add('opacity-0', 'translate-y-4');
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
+
+    // Restaurar scroll del body
+    document.body.style.overflow = 'auto';
+}
+
+// Cerrar modal al hacer clic fuera
+document.getElementById('profileModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Cerrar modal con tecla Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+</script>
+</div>
+    <!-- Estilos y animaciones -->
+    <style>
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(1rem);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fade-in-up 0.6s ease-out forwards;
+        }
+    </style>
+</section>
+
+<!-- KPIs y Métricas
+<section class="py-16 bg-[#f9fafb]">
+    <div class="container mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#004b23] mb-12">KPIs y Métricas</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- KPI 1 
+            <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 duration-300">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-[#666]">Valor de la Acción</p>
+                        <p class="text-2xl font-bold text-[#004b23]">$156.78</p>
+                    </div>
+                    <i class="fas fa-chart-line text-[#38b000] text-3xl"></i>
+                </div>
+                <div class="mt-4 h-2 bg-gray-200 rounded-full">
+                    <div class="h-full w-[65%] bg-[#38b000] rounded-full"></div>
+                </div>
+            </div>
+            
+            <!-- KPI 2 
+            <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 duration-300">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-[#666]">Valor de la Acción</p>
+                        <p class="text-2xl font-bold text-[#004b23]">$178.45</p>
+                    </div>
+                    <i class="fas fa-chart-line text-[#38b000] text-3xl"></i>
+                </div>
+                <div class="mt-4 h-2 bg-gray-200 rounded-full">
+                    <div class="h-full w-[78%] bg-[#38b000] rounded-full"></div>
+                </div>
+            </div>
+
+            <!-- KPI 3 
+            <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-2xl transition-transform transform hover:-translate-y-2 duration-300">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm text-[#666]">Valor de la Acción</p>
+                        <p class="text-2xl font-bold text-[#004b23]">$145.23</p>
+                    </div>
+                    <i class="fas fa-chart-line text-[#38b000] text-3xl"></i>
+                </div>
+                <div class="mt-4 h-2 bg-gray-200 rounded-full">
+                    <div class="h-full w-[50%] bg-[#38b000] rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+
+
+<!-- Footer Section -->
+<footer class="bg-[#252422] text-[#fffcf2] py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-10">
+            <!-- Logo y Nombre de la Empresa -->
+            <div class="flex flex-col items-center md:items-start">
+                <img src="logo.png" alt="Inecorp Logo" class="w-32 mb-4"> <!-- Asegúrate de tener el logo adecuado -->
+                <h3 class="text-4xl font-extrabold text-[#38b000]">Inecorp</h3>
+                <p class="mt-2 text-sm">Transformamos tu negocio con soluciones tecnológicas innovadoras.</p>
+            </div>
+
+            <!-- Navegación -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Navegación</h4>
+                <ul>
+                    <li><a href="#inicio" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Inicio</a></li>
+                    <li><a href="#servicios" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Servicios</a></li>
+                    <li><a href="#nosotros" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Nosotros</a></li>
+                    <li><a href="#contacto" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=61566536291790" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://twitter.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://linkedin.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://instagram.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+
+            <!-- Contacto y Dirección -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Contacto</h4>
+                <p class="text-[#ccc5b9] text-sm">Dirección: Calle Ficticia 123, Ciudad, País</p>
+                <p class="text-[#ccc5b9] text-sm">Teléfono: +123 456 789</p>
+                <p class="text-[#ccc5b9] text-sm">Email: contacto@inecorp.com</p>
+            </div>
+        </div>
+
+        <!-- Derechos de Autor -->
+        <div class="text-center mt-10">
+            <p class="text-sm text-[#ccc5b9]">&copy; 2024 Inecorp. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

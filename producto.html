@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inecorp - Productos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JavaScript.JS"></script>
+    <!-- Asegúrate de tener Font Awesome o cualquier librería de iconos que uses -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-[#252422] shadow-lg">
+        <nav class="container mx-auto flex flex-wrap justify-between items-center py-5 px-8">
+            <!-- Logo Inecorp -->
+            <a href="#" class="text-4xl font-bold text-[#fffcf2] tracking-wide hover:text-[#d4f8e8] transition duration-300 ease-in-out">
+                Inecorp
+            </a>
+
+            <!-- Menú Desktop -->
+            <ul class="hidden md:flex space-x-8 font-medium text-white">
+                <li><a href="index.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Inicio</a></li>
+                <li><a href="producto.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Productos</a></li>
+                <li><a href="Nosostros.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Nosotros</a></li>
+                <li><a href="ubicacion.html" class="hover:text-[#a7e9af] transition-all duration-300 hover:scale-105">Ubicación</a></li>
+            </ul>
+
+            <!-- Botón Toggle -->
+            <button id="menuButton" class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Menú Mobile -->
+            <div id="menuMobile" class="hidden w-full md:hidden">
+                <ul class="flex flex-col space-y-4 mt-4 text-center font-medium text-white">
+                    <li><a href="index.html" class="block hover:text-[#a7e9af] transition-all duration-300">Inicio</a></li>
+                    <li><a href="producto.html" class="block hover:text-[#a7e9af] transition-all duration-300">Productos</a></li>
+                    <li><a href="Nosostros.html" class="block hover:text-[#a7e9af] transition-all duration-300">Nosotros</a></li>
+                    <li><a href="ubicacion.html" class="block hover:text-[#a7e9af] transition-all duration-300">Ubicación</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function () {
+            const menu = document.getElementById('menuMobile');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-cover bg-center py-32" style="background-image: url('img/PRODUCTO.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="absolute inset-0 bg-[#004b23] bg-opacity-60"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <!-- Title -->
+            <h1 class="text-4xl md:text-5xl font-bold text-white tracking-wide uppercase mb-6 drop-shadow-lg">
+                Bienvenidos a <span class="text-[#fffcf2]">Inecorp</span>
+            </h1>
+            <!-- Subtitle -->
+            <p class="text-lg md:text-xl text-[#d4d4d4] leading-relaxed mb-10 max-w-2xl mx-auto">
+                Soluciones empresariales diseñadas para impulsar tu éxito. Nuestra experiencia y compromiso garantizan resultados excepcionales para tu negocio.
+            </p>
+            <!-- Call to Action Button -->
+            <a href="#contacto" class="bg-[#38b000] text-white text-lg font-medium py-3 px-10 rounded-full shadow-lg hover:bg-[#2a7500] transition-all transform hover:-translate-y-1 hover:scale-110">
+                Contáctanos
+            </a>
+        </div>
+    </section>
+<!-- Products Section -->
+<section id="servicios" class="py-20 bg-[#fffcf2]" style="background-image: url('img/servicio.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-[#004b23] mb-12">Nuestros Productos</h2>
+        <div class="grid md:grid-cols-4 gap-8"> <!-- Cambié la cantidad de columnas a 4 -->
+            <!-- Card 1 - Papas en Bastones -->
+            <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <img src="img/papas-bastones.png" alt="Papas en Bastones" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-[#006400] mb-4">Papas en Bastones</h3>
+                <p class="text-[#403d39] mb-6">Ofrecemos papas en bastones, listas para cocinar y disfrutar en cualquier momento. Con la frescura y calidad que nos caracteriza, nuestras papas son ideales para acompañar tus comidas o como aperitivos.</p>
+                <a href="#" onclick="openModal(event)" class="inline-block bg-[#38b000] text-white py-2 px-6 rounded-full hover:bg-[#006400] transition-all">Comprar</a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <img src="img/papas-peladas.png" alt="Papas en Bastones" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-[#006400] mb-4">Papas peladas</h3>
+                <p class="text-[#403d39] mb-6">Ofrecemos papas en bastones, listas para cocinar y disfrutar en cualquier momento. Con la frescura y calidad que nos caracteriza, nuestras papas son ideales para acompañar tus comidas o como aperitivos.</p>
+                <a href="#" onclick="openModal(event)" class="inline-block bg-[#38b000] text-white py-2 px-6 rounded-full hover:bg-[#006400] transition-all">Comprar</a>
+            </div>
+
+            <!-- Card 3 - Papas Picadas -->
+            <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <img src="img/papas-picadas.png" alt="Papas Picadas" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-[#006400] mb-4">Papas Picadas</h3>
+                <p class="text-[#403d39] mb-6">Nuestras papas picadas están disponibles en diferentes presentaciones, perfectas para preparar platos rápidos y deliciosos. Con una calidad inigualable, garantizamos el mejor sabor y frescura en cada bocado.</p>
+                <a href="#" onclick="openModal(event)" class="inline-block bg-[#38b000] text-white py-2 px-6 rounded-full hover:bg-[#006400] transition-all">Comprar</a>
+            </div>
+
+            <!-- Card 7 - Papas Orgánicas -->
+            <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                <img src="img/papas-organicas.png" alt="Papas Orgánicas" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-[#006400] mb-4">Papas Lavadas</h3>
+                <p class="text-[#403d39] mb-6">Nuestras papas orgánicas son cultivadas sin pesticidas ni químicos, garantizando un sabor más puro y natural. Perfectas para quienes buscan un estilo de vida más saludable.</p>
+                <a href="#" onclick="openModal(event)" class="inline-block bg-[#38b000] text-white py-2 px-6 rounded-full hover:bg-[#006400] transition-all">Comprar</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Modal para ingresar información del cliente -->
+<div id="modal" class="hidden fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-11/12 max-w-5xl">
+        <h3 class="text-2xl font-semibold text-[#004b23] mb-6 text-center">Complete la información de su pedido</h3>
+        <form id="orderForm" class="space-y-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Columna 1 -->
+                <div class="flex flex-col space-y-4">
+                    <label for="kilos" class="block text-[#006400] font-medium">Cantidad (Kilos):</label>
+                    <input type="number" id="kilos" name="kilos" class="w-full p-4 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38b000]" required>
+                </div>
+
+                <div class="flex flex-col space-y-4">
+                    <label for="fecha" class="block text-[#006400] font-medium">Para cuándo:</label>
+                    <input type="date" id="fecha" name="fecha" class="w-full p-4 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38b000]" required>
+                </div>
+
+                <div class="flex flex-col space-y-4">
+                    <label for="comentarios" class="block text-[#006400] font-medium">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" class="w-full p-4 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38b000]" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col space-y-4">
+                    <label for="tipoProducto" class="block text-[#006400] font-medium">Tipo de producto:</label>
+                    <select id="tipoProducto" name="tipoProducto" class="w-full p-4 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38b000]" required>
+                        <option value="">Seleccione un tipo</option>
+                        <option value="Papas frescas">Papas frescas</option>
+                        <option value="Papas procesadas">Papas procesadas</option>
+                        <option value="Papas orgánicas">Papas orgánicas</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col space-y-4">
+                    <label for="frecuencia" class="block text-[#006400] font-medium">Frecuencia de compra:</label>
+                    <select id="frecuencia" name="frecuencia" class="w-full p-4 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38b000]" required>
+                        <option value="">Seleccione la frecuencia</option>
+                        <option value="Una vez">Una vez</option>
+                        <option value="Semanal">Semanal</option>
+                        <option value="Mensual">Mensual</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center space-x-4">
+                <button type="submit" class="bg-[#38b000] text-white py-3 px-8 rounded-full hover:bg-[#006400] transition-all ease-in-out duration-200">Enviar</button>
+                <button id="closeModal" class="bg-red-500 text-white py-3 px-8 rounded-full hover:bg-red-600 transition-all ease-in-out duration-200">Cerrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- JavaScript para abrir y cerrar el modal -->
+<script>
+    // Función para abrir el modal
+    function openModal(event) {
+        event.preventDefault();  // Evitar el comportamiento predeterminado (por ejemplo, desplazamiento)
+        document.getElementById('modal').classList.remove('hidden');
+    }
+
+    // Función para cerrar el modal
+    document.getElementById('closeModal').addEventListener('click', function() {
+        document.getElementById('modal').classList.add('hidden');
+    });
+
+    // Enviar formulario y abrir WhatsApp
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault();  // Evitar el comportamiento predeterminado del formulario
+
+        // Recoger los datos del formulario
+        var kilos = document.getElementById('kilos').value;
+        var fecha = document.getElementById('fecha').value;
+        var comentarios = document.getElementById('comentarios').value;
+        var tipoProducto = document.getElementById('tipoProducto').value;
+        var frecuencia = document.getElementById('frecuencia').value;
+
+        // Crear el mensaje para WhatsApp
+        var message = `Hola, me gustaría comprar papas.\n*Cantidad (Kilos):* ${kilos}\n*Para cuándo:* ${fecha}\n*Comentarios:* ${comentarios}\n*Tipo de producto:* ${tipoProducto}\n*Frecuencia de compra:* ${frecuencia}`;
+
+        // Enviar el mensaje a través de WhatsApp
+        var whatsappLink = `https://wa.me/+51951740863?text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink, '_blank');
+        
+        // Cerrar el modal después de enviar
+        document.getElementById('modal').classList.add('hidden');
+    });
+</script>
+
+
+
+
+<!-- Footer Section -->
+<footer class="bg-[#252422] text-[#fffcf2] py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-10">
+            <!-- Logo y Nombre de la Empresa -->
+            <div class="flex flex-col items-center md:items-start">
+                <img src="logo.png" alt="Inecorp Logo" class="w-32 mb-4"> <!-- Asegúrate de tener el logo adecuado -->
+                <h3 class="text-4xl font-extrabold text-[#38b000]">Inecorp</h3>
+                <p class="mt-2 text-sm">Transformamos tu negocio con soluciones tecnológicas innovadoras.</p>
+            </div>
+
+            <!-- Navegación -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Navegación</h4>
+                <ul>
+                    <li><a href="#inicio" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Inicio</a></li>
+                    <li><a href="#servicios" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Servicios</a></li>
+                    <li><a href="#nosotros" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Nosotros</a></li>
+                    <li><a href="#contacto" class="text-[#ccc5b9] hover:text-[#38b000] transition-all">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=61566536291790" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://twitter.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://linkedin.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://instagram.com" class="text-[#ccc5b9] hover:text-[#38b000] transition-all"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+
+            <!-- Contacto y Dirección -->
+            <div class="flex flex-col">
+                <h4 class="text-xl font-semibold mb-4">Contacto</h4>
+                <p class="text-[#ccc5b9] text-sm">Dirección: Calle Ficticia 123, Ciudad, País</p>
+                <p class="text-[#ccc5b9] text-sm">Teléfono: +123 456 789</p>
+                <p class="text-[#ccc5b9] text-sm">Email: contacto@inecorp.com</p>
+            </div>
+        </div>
+
+        <!-- Derechos de Autor -->
+        <div class="text-center mt-10">
+            <p class="text-sm text-[#ccc5b9]">&copy; 2024 Inecorp. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
